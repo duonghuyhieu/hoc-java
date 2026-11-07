@@ -1,0 +1,38 @@
+name: Báo lỗi bài học
+description: Code trong repo chạy khác video, README ghi sai, hoặc làm theo không được
+title: "[Ngày ] "
+body:
+  - type: input
+    id: ngay
+    attributes:
+      label: Ngày
+      placeholder: "vd 24"
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: File
+      placeholder: "vd ngay-024/Buoc2.java"
+  - type: dropdown
+    id: may
+    attributes:
+      label: Máy của bạn
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Codespaces
+    validations:
+      required: true
+  - type: textarea
+    id: loi
+    attributes:
+      label: Bạn chạy lệnh gì, máy in ra gì?
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: mong
+    attributes:
+      label: Video hoặc README ghi gì?

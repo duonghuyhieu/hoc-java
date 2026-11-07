@@ -1,0 +1,11 @@
+{
+  "name": "Java 100 ngày",
+  "image": "mcr.microsoft.com/devcontainers/java:3-25-trixie",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Hỏi bài, nhờ giải thích
+    url: https://github.com/duonghuyhieu/hoc-java/discussions
+    about: Câu hỏi về bài học đặt ở mục Discussions để mọi người cùng xem
