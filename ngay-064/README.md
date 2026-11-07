@@ -1,14 +1,30 @@
 # Ngày 64 · Exception (3/3)
 
-Java 100 ngày · 7. Bộ sưu tập & lỗi
+> Java 100 ngày · 7. Bộ sưu tập & lỗi · video 1 phút 22 giây
 
 ## Bạn học gì
 
 Exception (3/3): checked, throws, tự tạo
 
-## Code trong video
+## Đáp án câu đố Ngày 63
+
+```java
+void main() {
+  int soVe = 2;
+  try { soVe += 3; } finally { soVe++; }
+  System.out.println(soVe);
+}
+```
+
+In ra: `6`
+
+## Bài học
+
+_Đi theo đúng thứ tự video. Lời giảng là lời đọc trong video; code và kết quả là bản máy đã chạy thật._
 
 ### NGÀY 64 · CHECKED, THROWS, TỰ TẠO
+
+Đố hôm qua ra sáu: finally vẫn cộng một vé. Một trăm xu, tiêu ba mươi, rồi ném lỗi hết xu — chạy ra sao?
 
 File `Loi1.java` — chạy: `java Loi1.java`
 
@@ -20,6 +36,12 @@ void main() {
 }
 ```
 
+**Đoán trước khi chạy — Chạy ra gì?**
+
+- A. `Hết xu`
+- B. `Lỗi khi chạy`
+- C. `Lỗi biên dịch`
+
 Lỗi máy báo (cố ý; rút gọn như trên video):
 
 ```text
@@ -27,7 +49,13 @@ Dòng 4: unreported exception Exception;
 must be caught or declared to be thrown
 ```
 
+Đáp án đúng: **C**.
+
+Java chặn ngay — sao ném lỗi lại bị cấm?
+
 ### ĐỔI MỘT CHỮ — Đổi một chữ Java cho qua
+
+Khoan đã, đổi sang lỗi lúc chạy thì Java cho qua. Xu trừ còn bảy mươi.
 
 File `Loi2.java` — chạy: `java Loi2.java`
 
@@ -45,7 +73,21 @@ Lỗi máy báo (cố ý; rút gọn như trên video):
 RuntimeException: Hết xu (dòng 4)
 ```
 
+Rồi dòng ném làm chương trình đổ lúc chạy. Đó là vì lỗi gốc thuộc loại checked, bị kiểm từ lúc biên dịch.
+
+### Ý chính — HAI LOẠI LỖI — Lỗi bị kiểm trước khi chạy
+
+Nghĩa là: như ngân hàng bắt ký giấy rủi ro trước khi rút, checked phải bắt hoặc khai. Nhưng khác ngân hàng, hàm được đẩy giấy cho nơi gọi, bằng throws. Còn lỗi lúc chạy là unchecked, không bị ép.
+
+- **checked** — kiểu Exception: phải bắt hoặc khai
+- **throws** — khai trên đầu hàm, đẩy lỗi ra ngoài
+- **unchecked** — RuntimeException: không bị ép
+
+Ghi nhớ nhanh: checked bắt hoặc khai · throws khai trên hàm · extends lỗi tự tạo
+
 ### TỰ TẠO LỖI — Lỗi hết xu do bạn tạo
+
+Giờ tự tạo lỗi hết xu: mở rộng từ Exception. Throws báo trước: hàm có thể ném lỗi này. Giá quá một trăm thì throw, ném thật. Mua ba mươi, một trăm rưỡi, rồi mười xu — đoán in ra gì?
 
 File `Buoc1.java` — chạy: `java Buoc1.java`
 
@@ -62,6 +104,12 @@ void main() {
 }
 ```
 
+**Đoán trước khi chạy — Đoán xem in ra gì?**
+
+- A. `Mua 30 / Hết xu`
+- B. `Mua 30 / Hết xu / Mua 10`
+- C. `Hết xu`
+
 Kết quả (máy đã chạy thật):
 
 ```text
@@ -69,7 +117,13 @@ Mua 30
 Hết xu
 ```
 
+Đáp án đúng: **A**.
+
+Chỉ hai dòng: lỗi nhảy xuống catch, bỏ luôn món mười xu.
+
 ### LỖI HAY GẶP — Quên throws ở đầu hàm
+
+Giờ thử xóa throws, giữ nguyên dòng ném.
 
 File `Loi3.java` — chạy: `java Loi3.java`
 
@@ -91,17 +145,11 @@ Dòng 3: unreported exception HetXu; must
 be caught or declared to be thrown
 ```
 
-## Đáp án câu đố Ngày 63
+Java báo ở dòng ném: lỗi chưa khai, phải bắt hoặc thêm throws. Mẹo dân code: bấm Alt Enter ở dòng gạch đỏ, IntelliJ gợi ý sẵn cách sửa.
 
-```java
-void main() {
-  int soVe = 2;
-  try { soVe += 3; } finally { soVe++; }
-  System.out.println(soVe);
-}
-```
+## Tóm lại
 
-In ra: `6`
+Tóm lại: lỗi checked phải bắt, hoặc khai bằng throws.
 
 ## Câu đố hôm nay
 

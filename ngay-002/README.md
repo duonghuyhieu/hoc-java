@@ -1,14 +1,29 @@
 # Ngày 2 · Đọc lỗi biên dịch (thiếu ;, lệch ngoặc: lỗi phổ biến nhất của người mới)
 
-Java 100 ngày · 1. Dòng code đầu tiên
+> Java 100 ngày · 1. Dòng code đầu tiên · video 1 phút 2 giây
 
 ## Bạn học gì
 
 Đọc lỗi biên dịch (thiếu ;, lệch ngoặc: lỗi phổ biến nhất của người mới)
 
-## Code trong video
+## Đáp án câu đố Ngày 1
+
+```java
+void main() {
+  System.out.println(20 + 5);
+  System.out.println("20 + 5");
+}
+```
+
+In ra: `25` / `20 + 5`
+
+## Bài học
+
+_Đi theo đúng thứ tự video. Lời giảng là lời đọc trong video; code và kết quả là bản máy đã chạy thật._
 
 ### NGÀY 2 · ĐỌC LỖI BIÊN DỊCH
+
+Đáp án hôm qua: hai mươi lăm, rồi đúng chữ hai mươi cộng năm. Thiếu một dấu ở dòng ba, dòng hai có kịp in không?
 
 File `Loi1.java` — chạy: `java Loi1.java`
 
@@ -19,13 +34,25 @@ void main() {
 }
 ```
 
+**Đoán trước khi chạy — Dòng 2 có kịp in không?**
+
+- A. `Vào trận`
+- B. `Vào trận / Máu: 100`
+- C. `Lỗi biên dịch`
+
 Lỗi máy báo (cố ý; rút gọn như trên video):
 
 ```text
 Dòng 3: ';' expected
 ```
 
+Đáp án đúng: **C**.
+
+Không chữ nào hiện, dù dòng hai đúng, vì sao?
+
 ### THÊM MỘT DẤU — Một dấu, cả bài chạy
+
+Đó là vì biên dịch: Java soát cả bài trước khi chạy.
 
 File `Buoc1.java` — chạy: `java Buoc1.java`
 
@@ -42,6 +69,19 @@ Kết quả (máy đã chạy thật):
 Vào trận
 Máu: 100
 ```
+
+Thêm dấu chấm phẩy, cả hai dòng in. Java như thầy chấm bài, gạch đỏ đúng dòng sai.
+
+### Ý chính — ĐỌC LỖI — Đọc lỗi theo thứ tự
+
+Vậy thấy chữ error đừng hoảng, tìm số dòng trước. Còn expected nghĩa là Java đang chờ dấu ghi ngay trước chữ đó. Mẹo dân code: chục lỗi thì sửa lỗi đầu, biên dịch lại.
+
+- **Số dòng** — chỗ bị gạch đỏ
+- **';'** expected — thiếu chấm phẩy
+- **')' or ','** expected — thiếu ngoặc đóng
+- **Lỗi đầu tiên** — sửa trước, biên dịch lại
+
+Ghi nhớ nhanh: Số dòng đọc trước · expected đang chờ · Lỗi đầu sửa trước
 
 ### LỖI HAY GẶP — Thiếu ngoặc nhọn đóng
 
@@ -60,7 +100,11 @@ Lỗi máy báo (cố ý; rút gọn như trên video):
 Dòng 4: reached end of file while parsing
 ```
 
+Khoan đã, thiếu ngoặc nhọn đóng thì thầy không ghi rõ, chỉ báo đọc hết file. Thấy báo vậy, bạn đếm lại ngoặc nhọn.
+
 ### ĐỦ NGOẶC — Đủ ngoặc, bài chạy
+
+Giờ thêm ngoặc đó vào cuối, bài chạy ngay. Máu khởi đầu một trăm.
 
 File `Buoc2.java` — chạy: `java Buoc2.java`
 
@@ -78,16 +122,11 @@ Kết quả (máy đã chạy thật):
 Máu: 70
 ```
 
-## Đáp án câu đố Ngày 1
+Trúng đòn trừ ba mươi, còn bảy mươi. Cái giữ số máu là biến, ngày mai học kỹ.
 
-```java
-void main() {
-  System.out.println(20 + 5);
-  System.out.println("20 + 5");
-}
-```
+## Tóm lại
 
-In ra: `25` / `20 + 5`
+Tóm lại: giờ bạn biết vì sao dòng đúng cũng không in.
 
 ## Câu đố hôm nay
 
