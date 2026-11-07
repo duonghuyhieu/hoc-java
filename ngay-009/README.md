@@ -45,7 +45,7 @@ Khách gõ năm mươi, cộng hai mươi, ra năm không hai không. Bàn phím
 
 ### ĐỌC BÀN PHÍM — Để khách tự gõ
 
-Vậy thay số sẵn bằng readln, lệnh đọc bàn phím. Nó in câu hỏi, rồi dừng chờ khách nhấn Enter.
+Vậy thay số sẵn bằng readln, lệnh đọc bàn phím. Nó in câu hỏi rồi chờ khách gõ; ở đây không ai gõ nên ra null.
 
 File `Buoc2.java` — chạy: `java Buoc2.java`
 

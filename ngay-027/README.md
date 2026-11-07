@@ -156,4 +156,4 @@ void main() {
 
 ## Bài tập
 
-Tách bài hoá đơn N7 thành 3 phương thức.
+Tách bài hóa đơn thành 3 phương thức.

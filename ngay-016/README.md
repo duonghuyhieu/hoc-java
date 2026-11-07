@@ -200,4 +200,4 @@ void main() {
 
 ## Bài tập
 
-Ghi đáp án 5 câu ra giấy, câu 5 đối chiếu ở đầu Ngày 18.
+Ghi đáp án 5 câu ra giấy, câu 5 đối chiếu ở đầu Ngày 17.
