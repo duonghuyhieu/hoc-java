@@ -1,4 +1,4 @@
-# Ngày 17 · MINI
+# Ngày 17 · MINI: máy tính phí ship
 
 > Java 100 ngày · 2. Ra quyết định · video 1 phút 32 giây
 

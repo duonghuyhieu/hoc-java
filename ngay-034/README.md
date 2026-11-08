@@ -1,4 +1,4 @@
-# Ngày 34 · DỰ ÁN CẤP 1 (2/3)
+# Ngày 34 · DỰ ÁN CẤP 1 (2/3): máy tính tiền cửa hàng tiện lợi
 
 > Java 100 ngày · 4. Chia nhỏ chương trình · video 1 phút 42 giây
 

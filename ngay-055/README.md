@@ -1,4 +1,4 @@
-# Ngày 55 · MINI
+# Ngày 55 · MINI: thanh toán Tiền mặt/Thẻ/Ví bằng đa hình
 
 > Java 100 ngày · 6. Kế thừa & đa hình · video 1 phút 39 giây
 

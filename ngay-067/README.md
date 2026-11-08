@@ -1,4 +1,4 @@
-# Ngày 67 · DỰ ÁN CẤP 2 (1/2)
+# Ngày 67 · DỰ ÁN CẤP 2 (1/2): Cửa hàng hướng đối tượng
 
 > Java 100 ngày · 7. Bộ sưu tập & lỗi · video 1 phút 35 giây
 
